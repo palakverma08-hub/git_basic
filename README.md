@@ -1,4 +1,4 @@
-# git_basic
+
 # Js Task 1 - Variables & Data Types
 
 ## Name
