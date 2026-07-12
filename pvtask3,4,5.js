@@ -497,7 +497,7 @@ console.log("Even Sum = " + evenSum);
 
 
 // 16. Sum of Odd Numbers
-=
+
 
 console.log(" ");
 console.log("===== SUM OF ODD NUMBERS =====");
