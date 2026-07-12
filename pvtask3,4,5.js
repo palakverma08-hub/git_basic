@@ -245,7 +245,326 @@ for (let i = 1; i <= 15; i++) {
     }
 
 }
+// =====================================
+// Task - 5
+// =====================================
 
+
+// 1. Student Information
+
+
+const studentName = "Palak Verma";
+let age = 20;
+
+let htmlMarks = 90;
+let cssMarks = 85;
+let javascriptMarks = 88;
+
+let attendance = 92;
+
+const isStudent = true;
+
+console.log("===== STUDENT INFORMATION =====");
+console.log("Student Name : " + studentName);
+console.log("Age : " + age);
+console.log("HTML Marks : " + htmlMarks);
+console.log("CSS Marks : " + cssMarks);
+console.log("JavaScript Marks : " + javascriptMarks);
+console.log("Attendance : " + attendance + "%");
+console.log("Is Student : " + isStudent);
+
+// 2. Total and Average Marks
+
+
+let totalMarks = htmlMarks + cssMarks + javascriptMarks;
+let averageMarks = totalMarks / 3;
+
+console.log(" ");
+console.log("===== TOTAL & AVERAGE =====");
+console.log("Total Marks : " + totalMarks);
+console.log("Average Marks : " + averageMarks);
+
+// 3. Grade Checker
+
+
+let grade = "";
+
+console.log(" ");
+console.log("===== GRADE CHECKER =====");
+
+if (averageMarks >= 90) {
+    grade = "A+";
+}
+else if (averageMarks >= 80) {
+    grade = "A";
+}
+else if (averageMarks >= 70) {
+    grade = "B";
+}
+else if (averageMarks >= 60) {
+    grade = "C";
+}
+else if (averageMarks >= 40) {
+    grade = "D";
+}
+else {
+    grade = "Fail";
+}
+
+console.log("Grade : " + grade);
+
+// 4. Subject Result Checker
+
+
+console.log(" ");
+console.log("===== SUBJECT RESULT =====");
+
+if (htmlMarks >= 40) {
+    console.log("HTML : Pass");
+} else {
+    console.log("HTML : Fail");
+}
+
+if (cssMarks >= 40) {
+    console.log("CSS : Pass");
+} else {
+    console.log("CSS : Fail");
+}
+
+if (javascriptMarks >= 40) {
+    console.log("JavaScript : Pass");
+} else {
+    console.log("JavaScript : Fail");
+}
+
+// 5. Overall Student Result
+
+
+let overallResult = "";
+
+console.log(" ");
+console.log("===== OVERALL RESULT =====");
+
+if (htmlMarks >= 40 && cssMarks >= 40 && javascriptMarks >= 40) {
+    overallResult = "Student Passed";
+} else {
+    overallResult = "Student Failed";
+}
+
+console.log(overallResult);
+
+// 6. Internship Eligibility Checker
+
+
+let internshipStatus = "";
+
+console.log(" ");
+console.log("===== INTERNSHIP ELIGIBILITY =====");
+
+if (
+    age >= 18 &&
+    attendance >= 75 &&
+    htmlMarks >= 40 &&
+    cssMarks >= 40 &&
+    javascriptMarks >= 40 &&
+    isStudent
+) {
+    internshipStatus = "Eligible for ODIZO Internship";
+} else {
+    internshipStatus = "Not Eligible for ODIZO Internship";
+}
+
+console.log(internshipStatus);
+
+// 7. Attendance Status
+
+
+let attendanceStatus = "";
+
+console.log(" ");
+console.log("===== ATTENDANCE STATUS =====");
+
+if (attendance >= 90) {
+    attendanceStatus = "Excellent Attendance";
+}
+else if (attendance >= 75) {
+    attendanceStatus = "Good Attendance";
+}
+else if (attendance >= 60) {
+    attendanceStatus = "Low Attendance";
+}
+else {
+    attendanceStatus = "Very Low Attendance";
+}
+
+console.log(attendanceStatus);
+
+// 8. Number Printing (1 to 50)
+
+
+console.log(" ");
+console.log("===== NUMBERS FROM 1 TO 50 =====");
+
+for (let i = 1; i <= 50; i++) {
+    console.log(i);
+}
+
+// 9. Reverse Number Printing (50 to 1)
+
+
+console.log(" ");
+console.log("===== NUMBERS FROM 50 TO 1 =====");
+
+for (let i = 50; i >= 1; i--) {
+    console.log(i);
+}
+
+// 10. Even Numbers (1 to 50)
+
+
+console.log(" ");
+console.log("===== EVEN NUMBERS =====");
+
+for (let i = 1; i <= 50; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+
+// 11. Odd Numbers
+
+
+console.log(" ");
+console.log("===== ODD NUMBERS =====");
+
+for (let i = 1; i <= 50; i++) {
+    if (i % 2 !== 0) {
+        console.log(i);
+    }
+}
+
+
+// 12. Even Numbers Without If
+
+
+console.log(" ");
+console.log("===== EVEN NUMBERS WITHOUT IF =====");
+
+for (let i = 2; i <= 50; i += 2) {
+    console.log(i);
+}
+
+
+// 13. Odd Numbers Without If
+
+
+console.log(" ");
+console.log("===== ODD NUMBERS WITHOUT IF =====");
+
+for (let i = 1; i <= 49; i += 2) {
+    console.log(i);
+}
+
+
+// 14. Sum of Numbers (1 to 100)
+
+
+console.log(" ");
+console.log("===== SUM OF NUMBERS =====");
+
+let sum = 0;
+
+for (let i = 1; i <= 100; i++) {
+    sum = sum + i;
+}
+
+console.log("Sum = " + sum);
+
+
+// 15. Sum of Even Numbers
+
+
+console.log(" ");
+console.log("===== SUM OF EVEN NUMBERS =====");
+
+let evenSum = 0;
+
+for (let i = 2; i <= 50; i += 2) {
+    evenSum = evenSum + i;
+}
+
+console.log("Even Sum = " + evenSum);
+
+
+// 16. Sum of Odd Numbers
+=
+
+console.log(" ");
+console.log("===== SUM OF ODD NUMBERS =====");
+
+let oddSum = 0;
+
+for (let i = 1; i <= 50; i += 2) {
+    oddSum = oddSum + i;
+}
+
+console.log("Odd Sum = " + oddSum);
+
+
+// 17. Multiplication Table
+
+
+console.log(" ");
+console.log("===== MULTIPLICATION TABLE =====");
+
+let number = 7;
+
+for (let i = 1; i <= 10; i++) {
+    console.log(number + " x " + i + " = " + (number * i));
+}
+
+
+// 18. Multiple Tables (2 to 5)
+
+
+console.log(" ");
+console.log("===== MULTIPLICATION TABLES (2 TO 5) =====");
+
+for (let table = 2; table <= 5; table++) {
+
+    console.log(" ");
+    console.log("Table of " + table);
+
+    for (let i = 1; i <= 10; i++) {
+        console.log(table + " x " + i + " = " + (table * i));
+    }
+}
+
+
+// 19. Divisible by 3
+
+
+console.log(" ");
+console.log("===== DIVISIBLE BY 3 =====");
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0) {
+        console.log(i);
+    }
+}
+
+
+// 20. Divisible by 5
+
+
+console.log(" ");
+console.log("===== DIVISIBLE BY 5 =====");
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 5 === 0) {
+        console.log(i);
+    }
+}
 
 // 21. Divisible by 3 and 5
 
