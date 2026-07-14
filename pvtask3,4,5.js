@@ -254,7 +254,7 @@ for (let i = 1; i <= 15; i++) {
 
 
 const studentName = "Palak Verma";
-let age = 20;
+let age = 18;
 
 let htmlMarks = 90;
 let cssMarks = 85;
